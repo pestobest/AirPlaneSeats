@@ -1,0 +1,55 @@
+POST http://localhost:3001/api/sessions
+content-type: application/json
+
+{
+  "username": "test1@email.com",
+  "password": "password"
+}
+
+###
+
+GET http://localhost:3001/api/sessions/current
+
+###
+
+DELETE  http://localhost:3001/api/sessions/current
+
+###
+
+GET http://localhost:3001/api/planes
+
+###
+
+GET http://localhost:3001/api/planes/1
+
+###
+
+POST http://localhost:3001/api/planes/
+content-type: application/json
+
+{
+  "requested": [
+    {
+      "planeId": 1,
+      "userId": 7,
+      "F": 1,
+      "P": "A"
+    },
+    {
+      "planeId": 1,
+      "userId": 7,
+      "F": 2,
+      "P": "A"
+    }
+  ]
+}
+
+###
+
+DELETE http://localhost:3001/api/planes/
+content-type: application/json
+
+{
+  "planeId": 1,
+  "userId": 6
+}

@@ -1,0 +1,90 @@
+.seats-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.occupied {
+  background-color: tomato;
+  color: white;
+}
+
+.available {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.requested {
+  background-color: goldenrod;
+  color: white;
+}
+
+.conflicting {
+  background-color: purple;
+  color: white;
+}
+
+.seats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height to fit your needs */
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.labels {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.label {
+  display: inline-block;
+  padding: 2px 6px;
+  margin-right: 10px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.label.label-reserved {
+  background-color: tomato;
+  color: #fff;
+}
+
+.label.label-available {
+  background-color: cornflowerblue;
+  color: #fff;
+}
+
+.label.label-requested {
+  background-color: goldenrod;
+  color: #fff;
+}
+
+.label.label-conflicting {
+  background-color: purple;
+  color: #fff;
+}
+
+.text {
+  color: white;
+}
